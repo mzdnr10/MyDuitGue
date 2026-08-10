@@ -50,6 +50,8 @@ import com.example.myduitgw.ui.screens.tabungan.TabunganScreen
 import com.example.myduitgw.ui.screens.transactions.TransactionsScreen
 import com.example.myduitgw.ui.screens.upload.UploadsScreen
 
+import com.example.myduitgw.ui.material.Theme
+
 @Composable
 fun AppNavigation() {
 
@@ -193,7 +195,7 @@ fun BottomBarItem(
                 contentDescription = label,
                 modifier = Modifier.size(23.dp),
                 tint = if (selected) {
-                    MaterialTheme.colorScheme.primary
+                    Theme
                 } else {
                     Color.Gray
                 }
@@ -221,7 +223,7 @@ fun BottomBarItem(
                 contentDescription = label,
                 modifier = Modifier.size(23.dp),
                 tint = if (selected) {
-                    MaterialTheme.colorScheme.primary
+                    Theme
                 } else {
                     Color.Gray
                 }
@@ -263,7 +265,7 @@ private fun BottomBarItemContent(
                 text = label,
                 style = MaterialTheme.typography.labelSmall,
                 color = if (selected) {
-                    MaterialTheme.colorScheme.primary
+                    Theme
                 } else {
                     Color.Gray
                 },
@@ -296,7 +298,7 @@ fun ScanButton(
                     shape = CircleShape
                 ),
             shape = CircleShape,
-            color = MaterialTheme.colorScheme.primary
+            Theme
         ) {
 
             Box(
