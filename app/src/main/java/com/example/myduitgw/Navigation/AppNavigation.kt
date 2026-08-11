@@ -78,7 +78,11 @@ fun AppNavigation() {
         ) {
 
             composable("home") {
-                HomeScreen()
+                HomeScreen(
+                    onNavigate = { route ->
+                        navController.navigate(route)
+                    }
+                )
             }
 
             composable("transactions") {
